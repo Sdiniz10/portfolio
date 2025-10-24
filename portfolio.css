@@ -2,11 +2,39 @@
     padding: 0;
       box-sizing: border-box;
 }
+.darkmode {
+  
+  --colorbody :#EEEEEE;
+    --coloreu: #000000;
+    --textheader: #4cd450;
+   --texteu: #301C59;
+      --blackbox: #000000;
+      --headcor: rgb(0, 0, 0);
+        --blackbox: #EEEEEE;
+   --textheadereu:black;
+   
+
+  
+}
+
+:root {
+ --colorbody :#000000;
+     --coloreu: #EEEEEE;
+         --textheader: #4cd450;
+              --texteu: #301C59;
+      --blackbox: #000000;
+      --headcor: rgb(0, 0, 0);
+        --blackbox: #000000;
+ 
+
+ 
+}
+
 #header {
     width: 100%;
     height: 70px;
-    background-color: #301C59;
-    color: #55E5A4;
+    background-color: var(--textheader);
+    color: var(--textheadereu);
 display: flex;
 flex-direction: row;
 gap: 30px;
@@ -15,8 +43,12 @@ justify-content: space-between;
 .head_palavra {
     margin-top: 30px;
 }
-.myname {
+.head_palavra:hover {
+  color: var(--colorbody);
+}
+body {
     font-family: sans-serif;
+  background-color: var(--coloreu);
 }
 #instagram {
     width: 40px;
@@ -25,7 +57,7 @@ justify-content: space-between;
     transform: translateY(-15px);
 }
 #instagram:hover {
-  fill: #55E5A4;
+  fill: var(--colorbody)
 
 }
 #whatsapp {
@@ -35,7 +67,7 @@ justify-content: space-between;
     transform: translateY(-15px);
 }
 #whatsapp:hover {
-  fill: #55E5A4;
+  fill: var(--colorbody) ;
 
 }
 
@@ -47,7 +79,7 @@ justify-content: space-between;
     margin-right: 20px;
 }
 #claro:hover {
-  fill: #55E5A4;
+  fill: var(--colorbody) ;
 
 }
 #inicio {
@@ -55,13 +87,15 @@ justify-content: space-between;
 }
 #eu {
     width: 100%;
-    height: 800px;
-    background-color: #C5E6C6;
-    color: #301C59;
+    height: 1000px;
+    fill: var(--coloreu) ;
+    background-color: var(--coloreu);
+    color: var(--texteu);
     font-size: 2em;
   
 }
 .myname {
+  background-color: var(--coloreu);
   display: inline-block;
 margin: 15px;
 }
@@ -70,6 +104,7 @@ margin: 15px;
     height: 20px;
 }
 .linhas2 {
+     background-color: var(--coloreu);
     width: 100%;
     height: 20px;
     margin-top: 80px;
@@ -81,17 +116,292 @@ margin: 15px;
   display: inline-block;
   margin-bottom: 100px;
 }
-.seja {
-margin-left: 20px;
+.blackbox {
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  font-size: 0.8em;
+  color: var(--texteu);
+  background-color: var(--blackbox) ;
+
+  transform: translateY(100px);
+}
+.blackbox1 {
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  font-size: 0.8em;
+  color: var(--texteu);
+  background-color: var(--blackbox) ;
+    transform: translateY(50px);
+margin-left: -500px;
 }
 .foto {
-  height: 200px;
-  width: 200px;
+  transform: translateY(-50px);
+  margin-left: 150px;
+height: 40vh;
+width: 40vh;
+
+ 
 }
-.grid {
+
+.grid2 {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ font-size: 1.1em;
+}
+
+#checkbox {
+display: none;
+}
+
+.all {
+transform: translate(-400px)
+}
+
+main {
+    height: 84vh;
+    display: flex;
+
+ 
+    align-items: center;
+    justify-items: center;
+    
+
+}
+
+.cards {
+    width: 40%;
+    height: 40%;
+
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.ball {
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+   animation: rolar 1s infinite alternate linear;
+ 
+}
+.master {
+margin-top: 50px;
+  width: 200px;
+  height: 200px;
+   animation: rolar1 0.5s infinite alternate linear;
+}
+.great {
+margin-top: 50px;
+  width: 250px;
+  height: 200px;
+   animation: rolar1 0.5s infinite alternate linear;
+}
+.ultra {
+margin-top: 50px;
+  width: 250px;
+  height: 200px;
+   animation: rolar1 0.5s infinite alternate linear;
+}
+dialog svg {
+    width: 30px;
+}
+
+dialog {
+position: fixed;
+width: 60%;
+height: 50%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+border-radius: 30px;
+background-color: rgb(255, 255, 255);
+
+}
+.myname1 {
+  margin-left: 50px;
+  font-size: 4em;
+ color: var(--texteu);
+}
+
+.html {
+  font-size: 2em;
+   color: var(--texteu);
+}
+.dialogo {
+  padding: 20px;
+      border-width: 5px;
+      border-style: groove;
+      border-color: #333;
+      text-align: center;
+}
+.aberta {
+  width: 30px;
+  height: 30px;
+}
+.modal::backdrop {
+backdrop-filter: blur(20px);
   
 }
-.grid2 {
+.modal2::backdrop {
+backdrop-filter: blur(20px);
+  
+}
+.csharp{
+  font-size: 2em;
+   color: var(--texteu);
+
+}
+.dialogo1 {
+  padding: 20px;
+      border-width: 5px;
+      border-style: groove;
+      border-color: #333;
+      text-align: center;
+}
+.preto {
+ width: 100%;
+justify-content: center;
+ 
+background-color: #010102;
+}
+.cinza {
+
+
+}
+.balls1 {
+  margin-top: 50px;
+  width: 200px;
+  height: 180px;
+}
+.mim {
+    color: var(--texteu);
+    font-size: 4em;
+    margin-bottom: 10vh;
+}
+
+
+
+
+
+@keyframes rolar {
+  from {transform: rotateY(0);
+    margin-top: 0;
+}
+  to {
+    transform: rotateY(360deg);
+    margin-top: 50px;
+  }
+}
+
+
+#sobremim {
+   display: grid;
+ grid-template-columns: 1fr ;
+}
+
+.eutextos {
   display: grid;
-  grid-template-columns: 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+     color: var(--texteu);
+}
+
+.Samuel {
+  font-size: 5em;
+ color: var(--texteu);
+}
+.premiacoes {
+  font-size: 3.3em;
+  margin-top: 10vh;
+  color: var(--texteu);
+}
+.Diniz {
+  transform: translatey(-100px);
+  font-size: 5em;
+   color: var(--texteu);
+}
+.resto {
+  font-size: 2em;
+}
+
+@keyframes rolar1 {
+  from {transform: rotate(-30deg);
+  }
+  to {
+    from {transform: rotate(30deg);
+  }
+  }
+}
+
+.foto1 {
+    transform: translateY(-50px);
+  margin-left: 150px;
+height: 50vh;
+width: 50vh;
+border-radius: 50%;
+animation: rolar 2s infinite alternate linear;
+}
+form {
+  margin-left: 25%;
+  height: 500px;
+  width: 50%;
+}
+.mensagem {
+  width: 782px;
+  height: 161px;
+   border-radius: 1;
+    background-color: rgb(33, 30, 30);
+     border-style: none;
+     color: #7952CA;
+     text-align: top;
+}
+.i {
+  width: 687px;
+  height: 41px;
+  border-radius: 1%;
+  margin-top: 20px;
+  margin-left: 50px;
+  background-color: white;
+}
+.contato {
+
+  margin-left: 26%;
+  font-size: 3em;
+  color: purple;
+}
+.linhas4 {
+  
+ 
+    width: 100%;
+    height: 20px;
+  
+}
+.linhas3 {
+  
+  
+    width: 100%;
+    height: 20px;
+   margin-bottom: 15px;
+}
+
+.name1 {
+  height: 59px;
+ margin-left: 5vh;
+ margin-bottom: 15px;
+ background-color: rgb(33, 30, 30);
+  border-style: none;
+  color: #7952CA;
+}
+.email1 {
+   height: 59px;
+    margin-left: 30vh;
+     background-color: rgb(33, 30, 30);
+     border-style: none;
+     color: #7952CA;
+}
+.form {
+  background-color: #010102;
+  width: 100%;
+  height: 400px;
 }
