@@ -21,4 +21,3 @@ function fechar1 () {
     modal2.close ()
 }
 
-
