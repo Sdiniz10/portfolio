@@ -1,289 +1,321 @@
-* { margin: 0;
-    padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s, color 0.3s;
 }
-.darkmode {
-  
-  --colorbody :#EEEEEE;
-    --coloreu: #000000;
-    --textheader: #4cd450;
-   --texteu: #301C59;
-      --blackbox: #000000;
-      --headcor: rgb(0, 0, 0);
-        --blackbox: #EEEEEE;
-   --textheadereu:black;
-   
 
-  
+.darkmode {
+
+  --colorbody: #EEEEEE;
+  --coloreu: #000000;
+  --textheader: #3acc3f;
+  --texteu: #391e6e;
+  --blackbox: #000000;
+  --headcor: rgb(0, 0, 0);
+  --blackbox: #EEEEEE;
+  --textheadereu: black;
+
+
+
 }
 
 :root {
- --colorbody :#000000;
-     --coloreu: #EEEEEE;
-         --textheader: #4cd450;
-              --texteu: #301C59;
-      --blackbox: #000000;
-      --headcor: rgb(0, 0, 0);
-        --blackbox: #000000;
- 
+  --colorbody: #000000;
+  --coloreu: #EEEEEE;
+  --textheader: #2a48cc;
+  --texteu: #301C59;
+  --blackbox: #000000;
+  --headcor: rgb(0, 0, 0);
+  --blackbox: #000000;
 
- 
+
 }
 
 #header {
-    width: 100%;
-    height: 70px;
-    background-color: var(--textheader);
-    color: var(--textheadereu);
-display: flex;
-flex-direction: row;
-gap: 30px;
-justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: var(--textheader);
+  color: var(--textheadereu);
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-between;
 }
+
 .head_palavra {
-    margin-top: 30px;
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--colorbody);
-    transition: 0.5s;
+  margin-top: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--colorbody);
+  transition: 0.5s;
 }
+
 .head_palavra:hover {
   color: var(--coloreu);
   transition: 0.5s;
 }
+
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
   background-color: var(--coloreu);
 }
+
 #instagram {
-    width: 40px;
-    height: 40px;
-    fill: black;
-    transform: translateY(-15px);
+  width: 40px;
+  height: 40px;
+  fill: black;
+  transform: translateY(-15px);
 }
+
 #instagram:hover {
   fill: var(--colorbody)
+}
 
-}
 #whatsapp {
-      width: 40px;
-    height: 40px;
-    fill: black;
-    transform: translateY(-15px);
+  width: 40px;
+  height: 40px;
+  fill: black;
+  transform: translateY(-15px);
 }
+
 #whatsapp:hover {
-  fill: var(--colorbody) ;
+  fill: var(--colorbody);
 
 }
 
 #claro {
-      width: 40px;
-    height: 40px;
-    fill: black;
-    transform: translateY(-15px);
-    margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  fill: black;
+  transform: translateY(-15px);
+  margin-right: 20px;
 }
+
 #claro:hover {
-  fill: var(--colorbody) ;
+  fill: var(--colorbody);
 
 }
+
 #inicio {
-    margin-left: 20px;
+  margin-left: 20px;
 }
+
 #eu {
-    width: 100%;
-    height: 1000px;
-    fill: var(--coloreu) ;
-    background-color: var(--coloreu);
-    color: var(--texteu);
-    font-size: 2em;
-  
+  width: 100%;
+  height: 1000px;
+  fill: var(--coloreu);
+  background-color: var(--coloreu);
+  color: var(--texteu);
+  font-size: 2em;
+
 }
+
 .myname {
   background-color: var(--coloreu);
   display: inline-block;
-margin: 15px;
+  margin: 15px;
 }
+
 .linhas {
-    width: 100%;
-    height: 20px;
+  width: 100%;
+  height: 50px;
 }
+
 .linhas2 {
-     background-color: var(--coloreu);
-    width: 100%;
-    height: 20px;
-    margin-top: 80px;
+  background-color: var(--coloreu);
+  width: 100%;
+  height: 50px;
+  margin-top: 80px;
 }
+
 .texts {
   font-size: 1.5em;
 }
+
 .vindo {
   display: inline-block;
   margin-bottom: 100px;
 }
+
 .blackbox {
   height: 50px;
   width: 200px;
   text-align: center;
   font-size: 0.8em;
   color: var(--texteu);
-  background-color: var(--blackbox) ;
+  background-color: var(--blackbox);
 
   transform: translateY(100px);
 }
+
 .blackbox1 {
   height: 50px;
   width: 200px;
   text-align: center;
   font-size: 0.8em;
   color: var(--texteu);
-  background-color: var(--blackbox) ;
-    transform: translateY(50px);
-margin-left: -500px;
+  background-color: var(--blackbox);
+  transform: translateY(50px);
+  margin-left: -500px;
 }
+
 .foto {
   transform: translateY(-50px);
   margin-left: 150px;
-height: 40vh;
-width: 40vh;
+  height: 40vh;
+  width: 40vh;
 
- 
+
 }
 
 .grid2 {
- display: grid;
- grid-template-columns: 1fr 1fr;
- font-size: 1.1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.1em;
 }
 
 #checkbox {
-display: none;
+  display: none;
 }
 
 .all {
-transform: translate(-400px)
+  transform: translate(-400px)
 }
 
 main {
-    height: 84vh;
-    display: flex;
+  height: 84vh;
+  display: flex;
 
- 
-    align-items: center;
-    justify-items: center;
-    
+
+  align-items: center;
+  justify-items: center;
+
 
 }
 
 .cards {
-    width: 40%;
-    height: 40%;
+  width: 40%;
+  height: 40%;
 
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
+
 .ball {
   margin-top: 50px;
   width: 200px;
   height: 200px;
-   animation: rolar2 1s infinite alternate linear;
- 
+  animation: rolar2 1s infinite alternate linear;
+
 }
+
 .master {
-margin-top: 50px;
+  margin-top: 50px;
   width: 200px;
   height: 200px;
-   animation: rolar1 0.5s infinite alternate linear;
+  animation: rolar1 0.5s infinite alternate linear;
 }
+
 .great {
-margin-top: 50px;
+  margin-top: 50px;
   width: 250px;
   height: 200px;
   animation: rolar1 0.5s infinite alternate linear;
 }
+
 .ultra {
-margin-top: 50px;
+  margin-top: 50px;
   width: 250px;
   height: 200px;
-   animation: rolar1 0.5s infinite alternate linear;
+  animation: rolar1 0.5s infinite alternate linear;
 }
+
 dialog svg {
-    width: 30px;
+  width: 30px;
 }
 
 dialog {
-position: fixed;
-width: 60%;
-height: 50%;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
-border-radius: 30px;
-background-color: rgb(255, 255, 255);
+  position: fixed;
+  width: 60%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
 
 }
+
 .myname1 {
   margin-left: 50px;
   font-size: 4em;
- color: var(--texteu);
+  color: var(--texteu);
 }
 
 .html {
   font-size: 2em;
-   color: var(--texteu);
+  color: var(--texteu);
 }
+
 .dialogo {
   padding: 20px;
-      border-width: 5px;
-      border-style: groove;
-      border-color: #333;
-      text-align: center;
+  border-width: 5px;
+  border-style: groove;
+  border-color: #333;
+  text-align: center;
 }
+
 .aberta {
   width: 30px;
   height: 30px;
 }
+
 .modal::backdrop {
-backdrop-filter: blur(20px);
-  
-}
-.modal2::backdrop {
-backdrop-filter: blur(20px);
-  
-}
-.csharp{
-  font-size: 2em;
-   color: var(--texteu);
+  backdrop-filter: blur(20px);
 
 }
+
+.modal2::backdrop {
+  backdrop-filter: blur(20px);
+
+}
+
+.csharp {
+  font-size: 2em;
+  color: var(--texteu);
+
+}
+
 .dialogo1 {
   padding: 20px;
-      border-width: 5px;
-      border-style: groove;
-      border-color: #333;
-      text-align: center;
+  border-width: 5px;
+  border-style: groove;
+  border-color: #333;
+
 }
+
 .preto {
- width: 100%;
-justify-content: center;
- 
-background-color: #010102;
-}
-.cinza {
+  width: 100%;
+  justify-content: center;
 
-
+  background-color: #010102;
 }
+
+.cinza {}
+
 .balls1 {
   margin-top: 50px;
   width: 200px;
   height: 180px;
 }
+
 .mim {
-    color: var(--texteu);
-    font-size: 4em;
+  color: var(--texteu);
+  font-size: 4em;
   transform: translateY(-10vh);
 }
 
@@ -292,16 +324,18 @@ background-color: #010102;
 
 
 @keyframes rolar2 {
-  from {transform: rotateY(0) ;
+  from {
+    transform: rotateY(0);
     margin-top: 0;
 
-  
-}
+
+  }
+
   to {
     transform: rotateY(360deg);
     margin-top: 50px;
 
-  
+
   }
 }
 
@@ -311,22 +345,23 @@ background-color: #010102;
 
 
 #sobremim {
-   display: grid;
- grid-template-columns: 1fr ;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .eutextos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-     color: var(--texteu);
-     height: 48vh;
+  color: var(--texteu);
+  height: 48vh;
 }
 
 .Samuel {
   font-size: 5em;
- color: var(--texteu);
- grid-column: 1;
+  color: var(--texteu);
+  grid-column: 1;
 }
+
 .premiacoes {
   transform: translateY(-100px);
   font-size: 3.3em;
@@ -335,12 +370,14 @@ background-color: #010102;
   grid-column: 1;
   grid-row: 2;
 }
+
 .Diniz {
   transform: translatey(-100px);
   font-size: 5em;
-   color: var(--texteu);
-   grid-column: 3;
+  color: var(--texteu);
+  grid-column: 3;
 }
+
 .resto {
   transform: translateY(-100px);
   font-size: 1.5em;
@@ -348,39 +385,49 @@ background-color: #010102;
 }
 
 @keyframes rolar1 {
-  from {transform: rotate(-30deg);
+  from {
+    transform: rotate(-30deg);
   }
+
   to {
-    from {transform: rotate(30deg);
-  }
+    from {
+      transform: rotate(30deg);
+    }
   }
 }
 
 .foto1 {
-   
-height: 50vh;
-width: 50vh;
-grid-column: 2;
-grid-row: 2;
-border-radius: 50%;
 
-animation: rolar2 2s infinite alternate linear;
+  height: 50vh;
+  width: 50vh;
+  grid-column: 2;
+  grid-row: 2;
+  border-radius: 50%;
+
+  animation: rolar2 2s infinite alternate linear;
 
 }
+
 form {
   margin-left: 25%;
   height: 500px;
   width: 50%;
 }
+
 .mensagem {
+  min-width: 782px;
+  max-width: 782px;
+  min-height: 161px;
+  max-height: 161px;
   width: 782px;
   height: 161px;
-   border-radius: 1;
-    background-color: rgb(33, 30, 30);
-     border-style: none;
-     color: #7952CA;
-     text-align: top;
+  border-radius: 1;
+  background-color: rgb(33, 30, 30);
+  border-style: none;
+  color: #7952CA;
+  text-align: top;
 }
+
 .i {
   width: 687px;
   height: 41px;
@@ -389,42 +436,47 @@ form {
   margin-left: 50px;
   background-color: white;
 }
+
 .contato {
 
   margin-left: 26%;
   font-size: 3em;
   color: purple;
 }
+
 .linhas4 {
-  
- 
-    width: 100%;
-    height: 20px;
-  
+
+
+  width: 100%;
+  height: 50px;
+
 }
+
 .linhas3 {
-  
-  
-    width: 100%;
-    height: 20px;
-   margin-bottom: 15px;
+
+
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
 }
 
 .name1 {
   height: 59px;
- margin-left: 5vh;
- margin-bottom: 15px;
- background-color: rgb(33, 30, 30);
+  margin-left: 5vh;
+  margin-bottom: 15px;
+  background-color: rgb(33, 30, 30);
   border-style: none;
   color: #7952CA;
 }
+
 .email1 {
-   height: 59px;
-    margin-left: 30vh;
-     background-color: rgb(33, 30, 30);
-     border-style: none;
-     color: #7952CA;
+  height: 59px;
+  margin-left: 30vh;
+  background-color: rgb(33, 30, 30);
+  border-style: none;
+  color: #7952CA;
 }
+
 .form {
   background-color: #010102;
   width: 100%;
@@ -439,9 +491,11 @@ footer {
   width: 100%;
   background-color: var(--textheader);
 }
+
 .foot {
-margin-top: 40px;
+  margin-top: 40px;
 }
+
 .direitos {
   margin-top: 2PX;
 }
