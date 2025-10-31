@@ -10,7 +10,7 @@
 
   --colorbody: #EEEEEE;
   --coloreu: #000000;
-  --textheader: #3acc3f;
+  --textheader: #2a48cc;
   --texteu: #391e6e;
   --blackbox: #000000;
   --headcor: rgb(0, 0, 0);
@@ -65,36 +65,36 @@ body {
 #instagram {
   width: 40px;
   height: 40px;
-  fill: black;
+  fill: var(--colorbody);
   transform: translateY(-15px);
 }
 
 #instagram:hover {
-  fill: var(--colorbody)
+  fill: var(--coloreu)
 }
 
 #whatsapp {
   width: 40px;
   height: 40px;
-  fill: black;
+  fill: var(--colorbody);
   transform: translateY(-15px);
 }
 
 #whatsapp:hover {
-  fill: var(--colorbody);
+  fill: var(--coloreu);
 
 }
 
 #claro {
   width: 40px;
   height: 40px;
-  fill: black;
+  fill: var(--colorbody);
   transform: translateY(-15px);
   margin-right: 20px;
 }
 
 #claro:hover {
-  fill: var(--colorbody);
+  fill: var(--coloreu);
 
 }
 
@@ -115,7 +115,9 @@ body {
 .myname {
   background-color: var(--coloreu);
   display: inline-block;
+  font-size: 2em;
   margin: 15px;
+  text-decoration: underline;
 }
 
 .linhas {
@@ -147,7 +149,7 @@ body {
   color: var(--texteu);
   background-color: var(--blackbox);
 
-  transform: translateY(100px);
+
 }
 
 .blackbox1 {
@@ -157,7 +159,7 @@ body {
   font-size: 0.8em;
   color: var(--texteu);
   background-color: var(--blackbox);
-  transform: translateY(50px);
+
   margin-left: -500px;
 }
 
@@ -181,7 +183,9 @@ body {
 }
 
 .all {
-  transform: translate(-400px)
+display: flex;
+gap: 10%;
+margin-left: 40%;
 }
 
 main {
@@ -305,7 +309,7 @@ dialog {
   background-color: #010102;
 }
 
-.cinza {}
+
 
 .balls1 {
   margin-top: 50px;
@@ -316,7 +320,8 @@ dialog {
 .mim {
   color: var(--texteu);
   font-size: 4em;
-  transform: translateY(-10vh);
+  margin-bottom: 5%;
+
 }
 
 
@@ -340,18 +345,20 @@ dialog {
 }
 
 .teste55 {
-  transform: translateY(-150px);
+  gap: 5%;
+transform: translateY(-20%);
 }
 
 
 #sobremim {
+  height: 95vh;
   display: grid;
   grid-template-columns: 1fr;
 }
 
 .eutextos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr;
   color: var(--texteu);
   height: 48vh;
 }
@@ -363,7 +370,6 @@ dialog {
 }
 
 .premiacoes {
-  transform: translateY(-100px);
   font-size: 3.3em;
   margin-top: 10vh;
   color: var(--texteu);
@@ -372,15 +378,14 @@ dialog {
 }
 
 .Diniz {
-  transform: translatey(-100px);
   font-size: 5em;
   color: var(--texteu);
   grid-column: 3;
+  transform: translateY(-100%);
 }
 
 .resto {
-  transform: translateY(-100px);
-  font-size: 1.5em;
+  font-size: 1.3em;
   grid-template-columns: 3;
 }
 
@@ -487,7 +492,7 @@ form {
 footer {
   display: inline-block;
   text-align: center;
-  height: 10.5vh;
+  height: 12.7vh;
   width: 100%;
   background-color: var(--textheader);
 }
@@ -498,4 +503,27 @@ footer {
 
 .direitos {
   margin-top: 2PX;
+}
+
+#copiarCheckbox {
+  display: none;
+}
+
+#textoParaCopiar {
+  display: none;
+}
+
+.baixar {
+  text-align: center;
+  margin-left: 30%;
+margin-top: 10%;
+width: 30%;
+border-radius: 50px;
+height: 10vh;
+color: var(--texteu);
+  background-color: var(--blackbox);
+  font-size: 1.5em;
+}
+.baixar2 {
+  margin-top: 5%;
 }
