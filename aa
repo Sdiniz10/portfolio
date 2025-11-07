@@ -1,0 +1,9 @@
+
+ <h1 class="direitos"> fdasfsdfsdfsdfsd <span id="type-text"></span> sadsada</h1>
+
+ const type = new Typed ("#typed", {
+    Strings: ["""],
+    typeSpeed: 80,
+    backspeed: 40,
+    loop: true
+});

@@ -2,11 +2,13 @@ let check = document.getElementById ("checkbox")
 
 function dark() {
 if (check.checked){
+    
     document.body.classList.add("darkmode")
     localStorage.setItem("modo", "escuro")
 }
 else {
     document.body.classList.remove("darkmode")
+   
     localStorage.setItem ("modo", "claro")
 }
 }
@@ -82,6 +84,13 @@ checkbox.addEventListener('change', function() {
      
         console.log('Checkbox desmarcada, nada copiado.');
     }
+});
+
+const type = new Type('#type', {
+    Strings: ['Oi! Eu sou Samuel Diniz'],
+    typeSpeed: 80,
+    backspeed: 40,
+    loop: true
 });
 
 
