@@ -23,6 +23,9 @@ dark()
 })
 let modal = document.getElementsByClassName("dialogo") [0]
 let modal2 = document.getElementsByClassName("dialogo1") [0]
+let modal3 = document.getElementsByClassName("dialogo2") [0]
+let modal4 = document.getElementsByClassName("dialogo3") [0]
+
 
 function abrir() {
     modal.showModal()
@@ -38,6 +41,21 @@ function abrir1() {
     modal2.classList.add ("modal2")
 }
 function fechar1 () {
+    modal2.close ()
+}
+function abrir2() {
+    modal2.showModal()
+    modal2.classList.add ("modal3")
+}
+function fechar2 () {
+    modal2.close ()
+}
+
+function abrir3() {
+    modal2.showModal()
+    modal2.classList.add ("modal4")
+}
+function fechar3 () {
     modal2.close ()
 }
 
@@ -61,8 +79,10 @@ checkbox.addEventListener('change', function() {
             alert('Falha ao copiar o texto.');
         });
     } else {
-        // Opcional: Esvaziar a área de transferência ou notificar que nada foi copiado
+     
         console.log('Checkbox desmarcada, nada copiado.');
     }
 });
+
+
 
