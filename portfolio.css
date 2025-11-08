@@ -8,7 +8,7 @@
   
   .darkmode {
   
-    --colorbody: #EEEEEE;
+    --colorbody: #FAFAFA;
     --coloreu: #000000;
     --textheader: #2a48cc;
     --texteu: #391e6e;
@@ -18,13 +18,16 @@
     --textheadereu: black;
     --colorborda: #f5f5f5;
       scroll-behavior: smooth;
+          --sombra: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --sombra-grande: 0 10px 15px rgba(0, 0, 0, 0.4);
+
   
   
   }
   
   :root {
     --colorbody: #000000;
-    --coloreu: #EEEEEE;
+    --coloreu: #FAFAFA;
     --textheader: #2a48cc;
     --texteu: #301C59;
     --blackbox: #000000;
@@ -32,6 +35,8 @@
     --blackbox: #000000;
     --colorborda: black;
       scroll-behavior: smooth;
+        --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --sombra-grande: 0 10px 15px rgba(0, 0, 0, 0.1);
   
   }
   
@@ -598,5 +603,291 @@ opacity: 0;
     text-decoration: none;
   }
 
+/* RESPONSIVIDADE PARA CELULAR - ATE 768px */
+@media (max-width: 768px) {
+  /* HEADER */
+  #header {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    gap: 15px;
+    justify-content: center;
+  }
 
+  .head_palavra {
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
 
+  #inicio {
+    margin-left: 10px;
+  }
+
+  #instagram, #whatsapp, #claro {
+    transform: translateY(0);
+    width: 35px;
+    height: 35px;
+  }
+
+  /* SEÇÃO INICIAL */
+  #eu {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .myname {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+
+  .vindo {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+
+  .grid2 {
+    grid-template-columns: 1fr;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .foto {
+    width: 60vw;
+    height: 60vw;
+    max-width: 250px;
+    max-height: 250px;
+    margin: 20px auto;
+    display: block;
+    transform: none;
+  }
+
+  .all {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-left: 0;
+  }
+
+  .blackbox, .blackbox1 {
+    width: 80%;
+    max-width: 250px;
+    margin: 0 auto;
+    font-size: 0.9em;
+  }
+
+  .blackbox1 {
+    margin-left: auto;
+  }
+
+  /* SOBRE MIM */
+  #sobremim {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .mim {
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  .eutextos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    height: auto;
+  }
+
+  .Samuel, .Diniz {
+    font-size: 3.5em;
+    text-align: center;
+    transform: none;
+  }
+
+  .premiacoes {
+    font-size: 2em;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .resto {
+    font-size: 1.1em;
+    text-align: justify;
+    padding: 0 10px;
+  }
+
+  .foto1 {
+    width: 70vw;
+    height: 70vw;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 20px auto;
+    display: block;
+    grid-column: 1;
+    grid-row: auto;
+    animation: none;
+  }
+
+  .teste55 {
+    transform: none;
+  }
+
+  .eutextos2 {
+    grid-column: 1;
+    padding: 0 15px;
+  }
+
+  .baixar {
+    width: 80%;
+    margin: 30px auto;
+    font-size: 1.2em;
+    height: 8vh;
+  }
+
+  .baixar2 {
+    margin-top: 8%;
+  }
+
+  /* HABILIDADES */
+  .myname1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 10px;
+  }
+
+  .preto {
+    padding: 20px 0;
+  }
+
+  .cinza {
+    padding: 0 10px;
+  }
+
+  main.flexball {
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+  }
+
+  .cards {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .ball, .master, .great, .ultra {
+    width: 150px;
+    height: 150px;
+  }
+
+  .html, .csharp {
+    font-size: 1.5em;
+  }
+
+  /* DIALOGS */
+  dialog {
+    width: 90%;
+    height: auto;
+    max-height: 80vh;
+    padding: 15px;
+    font-size: 1em;
+    overflow-y: auto;
+  }
+
+  .aberta {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* FORMULÁRIO */
+  .contato {
+    margin-left: 0;
+    text-align: center;
+    font-size: 2em;
+    padding: 20px 10px;
+  }
+
+  .form {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  form {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .flexform {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .name1, .email1 {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .mensagem {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    min-height: 120px;
+    max-height: 200px;
+    height: 120px;
+  }
+
+  .i {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  /* FOOTER */
+  footer {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .foot {
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+/* PARA TELAS MUITO PEQUENAS (até 480px) */
+@media (max-width: 480px) {
+  .head_palavra {
+    font-size: 0.8em;
+  }
+
+  .myname {
+    font-size: 1.3em;
+  }
+
+  .Samuel, .Diniz {
+    font-size: 2.8em;
+  }
+
+  .premiacoes {
+    font-size: 1.6em;
+  }
+
+  .baixar {
+    font-size: 1em;
+  }
+
+  .contato {
+    font-size: 1.8em;
+  }
+
+  dialog {
+    font-size: 0.95em;
+    padding: 12px;
+  }
+}
+.hover {
+  transition: 0.3s;
+}
+.hover:hover {
+   transform: translateY(-2%);
+box-shadow: var(--sombra-grande);
+}
